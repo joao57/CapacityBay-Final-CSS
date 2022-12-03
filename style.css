@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --Cyan: hsl(180, 66%, 49%);
+    --DarkViolet: hsl(257, 27%, 26%);
+    --Red: hsl(0, 87%, 67%);
+    --Gray: hsl(0, 0%, 75%);
+    --GrayishViolet: hsl(257, 7%, 63%);
+    --VeryDarkBlue: hsl(255, 11%, 22%);
+    --VeryDarkViolet: hsl(260, 8%, 14%);
+}
+
+/* HEADER: */
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+.logo img {
+    display: block;
+}
+
+.navigation {
+    display: flex;  
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: var(--GrayishViolet);
+    font-weight: 600;
+}
+nav ul li a:hover {
+    color: var(--DarkViolet);
+}
+
+.header-toggles {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 600;
+}
+.header-toggles div {
+    cursor: pointer;
+}
+
+.login {
+    color: var(--GrayishViolet);
+}
+
+.sign-up {
+    color: white;
+    background-color: var(--Cyan);
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+.sign-up:hover {
+    background-color: hsl(180, 66%, 55%);
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.hamburger div {
+    height: 4px;
+    width: 100%;
+    background-color: var(--GrayishViolet);
+}
+.hamburger div:not(:last-child){
+    margin-bottom: 5px;
+}
+
+/* HEADER RESPONSIVENESS: */
+
+@media (max-width: 1000px){
+    header {
+        width: 90%;
+    }
+    .hamburger {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .header-toggles {
+        display: none;
+    }
+   
+}
+
+
+/* Imo and Doumo*/
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    margin: 90px 0 0 130px;
+    width: 30%;
+    
+}
+.More{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--VeryDarkViolet);
+}
+.build{
+    color: var(--GrayishViolet);
+    font-size: 14px;
+}
+.get-started{
+    color: white;
+    background-color: var(--Cyan);
+    padding: 7px 20px;
+    border-radius: 25px;
+    width: 35%;
+    text-align: center;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    cursor: pointer;
+}
+.get-started:hover{
+    background-color: hsl(180, 66%, 55%);
+}
+.illus{
+    margin: 70px 0 50px 0;
+    width: 43%;
+}
+.illus img{
+    width: 100%;
+}
+
+
+
+/* Container Responsiveness */
+@media(max-width:1237px){
+    .content{
+        width: 40%;  
+        margin: 50px 0 0 105px;   
+   }
+   /* End of section by Imo Peter and Doumo Ngumezi */
+
+}
+@media (max-width: 1000px){
+    .content{
+        width: 47%;  
+        margin: 50px 0 0 40px;     
+    }
+    .get-started{
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 754px){
+    .content{
+        width: 90%;  
+        margin: 50px 0 0 40px;
+            
+    }
+    .get-started{
+        width: 40%;
+    }
+}
+@media (max-width: 522px){
+    .content{
+        margin: auto;
+        text-align: center;     
+    }
+    .get-started{
+        width: 60%;
+        margin: 30px auto;
+    }
+    .illus{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .More{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .build{
+        font-size: 20px;
+    }  
+}
+/* End of container responsiveness by Imo Peter and Doumo Ngumezi */
+
+
+/* The Shorten link section styling */
+.linkss{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 14px;
+}
+.link-section{
+    background-image: url(./images/bg-shorten-desktop.svg);
+    background-size: cover;
+    background-color: var(--GrayishViolet);
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shorten-it{
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    background-color: var(--Cyan);
+    padding: 7px 20px;
+    border-radius: 10px;
+    max-width: 1024px;
+    width: 20%;
+    height: 40px;
+    border: none;
+}
+.shorten-it:hover{
+    background-color: hsl(180, 66%, 55%)
+}
+input{
+padding: 10px;
+margin-right:10px;
+border-radius: 10px;
+width: 75%;
+border: solid var(--Red);
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    color: var(--Red);
+}
+.p-link{
+    color: var(--Red);
+    font-style: italic;
+    margin: 5px;
+}
+.p-link2{
+    color: var(--Red);
+    font-style: italic;
+    display: none;
+    margin: 5px;
+}
+.link{
+    background-color: rgb(241, 240, 240);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.link-but{
+    display: flex;
+    justify-content: center;
+}
+.link-p{
+    word-break: break-all;
+    margin-top: 10px;
+}
+.link-but p{
+    color: var(--Cyan);
+    align-items: center;
+}
+.link-copi{
+    cursor: pointer;
+    color: white;
+    background-color: var(--Cyan);
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.link-copi:hover{
+    background-color: hsl(180, 66%, 55%)
+}
+.link-copy{
+    cursor: pointer;
+    color: white;
+    background-color: var(--Cyan);
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.link-copy:hover{
+    background-color: hsl(180, 66%, 55%)
+}
+.link-copied{
+    color: white;
+    background-color: var(--DarkViolet);
+    padding: 10px 13px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+hr{
+    display: none;
+    margin: 10px 0;
+    
+}
+/* SHORTEN LINK RESPONSIVENESS */
+@media (max-width: 1200px){
+    .linkss{
+        width: 90%;
+    }
+}
+@media (max-width: 768px){
+    input{
+        margin-right: 10px;
+        }
+        .shorten-it{
+            width: 20%;
+            height: 60px;
+            font-size: 13px;
+        }
+        
+}
+@media (max-width:576px){
+    .link-section{
+        background-image: url(./images/bg-shorten-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        }
+        .shorten-it{
+            width: 100%;
+            font-size: 4vw;
+        }
+        .links{
+            text-align: center;
+        }
+        .link{
+            display: grid;
+        }
+        .link-but{
+            display: grid;
+            justify-content: left;
+        }
+        .link-copy{
+            padding: 10px 94%;
+            font-size: 4vw;
+            margin-top: 10px;
+            margin-left: none;
+           
+        }
+        .link-copi{
+            padding: 10px 100%;
+            font-size: 4vw;
+            margin-top: 10px;
+            margin-left: none;
+        }
+        .link-copied{
+            padding: 10px 92%;
+            font-size: 4vw;
+            margin-top: 10px;
+            margin-left: none;
+            /* border: none; */
+        }
+        .link-p{
+            font-size: 4vw;
+            text-align: left;
+        }
+        .p-link{
+            display: none;
+        }
+        .p-link2{
+            margin: 10px;
+            display: block;
+        }
+
+        hr{
+            display: block;
+        }
+}
+@media (max-width:425px){
+    .link-section{
+        background-image: url(./images/bg-shorten-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .link-copi{
+        padding: 10px 96%;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-left: none;
+    }
+    .link-copy{
+        padding: 10px 90%;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-left: none;
+    }
+    .link-copied{
+        padding: 10px 89%;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-left: none;
+        border: none;
+    }
+}
+/* End of url link section stylimg/responsive */
+
+/* Obimdike Footer: */
+
+footer{
+    background: var(--VeryDarkBlue);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px 130px;
+}
+.foot-logo h2 a{
+    color: #fff;
+}
+footer div h4{
+    color: #fff;
+}
+footer div ul li a{
+    color: var(--Gray);
+    font-size: 12px;
+}
+footer div ul li a:hover{
+    color: rgb(15, 185, 252);
+}
+.soc-handles ul{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5px;
+}
+.soc-handles ul li a{
+    font-size: 20px;
+}
+.soc-handles ul li a:hover{
+    color: aqua;
+}
+/* Footer Responsiveness */
+@media screen and (max-width:590px){
+    footer{
+       display: block;
+    }
+    .soc-handles ul{
+       justify-content: left;
+    }
+}
